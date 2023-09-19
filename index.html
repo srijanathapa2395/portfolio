@@ -28,6 +28,17 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script>
+    function calculateAge() {
+      const birthYear = 2005;
+      const currentDate = new Date();
+      const currentYear = currentDate.getFullYear();
+      const age = currentYear - birthYear;
+      document.getElementById("result").textContent = `${age}`;
+    }
+
+    window.onload = calculateAge;
+  </script>
   <!-- =======================================================
   * Template Name: Kelly
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
